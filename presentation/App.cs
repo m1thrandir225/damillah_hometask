@@ -82,6 +82,7 @@ public class App
 
             if (userInput.Trim().Equals("Exit", StringComparison.OrdinalIgnoreCase))
             {
+                Console.WriteLine("Written By: Sebastijan Zindl");
                 Console.WriteLine("\nExiting application. Goodbye!");
                 break;
             }
