@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("damilah-hometask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ed295463a1bb44ea5553548f5dddabcbc625dce")]
 [assembly: System.Reflection.AssemblyProductAttribute("damilah-hometask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("damilah-hometask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

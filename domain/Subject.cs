@@ -1,24 +1,22 @@
 namespace damilah_hometask.domain;
 
-public class Subject(string name, string description, int classesPerWeek) : BaseEntity
+public class Subject(
+    string name,
+    string description,
+    int classesPerWeek,
+    string? instructorName = null,
+    string? syllabusLink = null,
+    List<Literature>? literature = null
+
+    ) : BaseEntity
 {
     private string Name { get; set; } = name;
     private string Description { get; set; } = description;
     private int ClassesPerWeek { get; set; } = classesPerWeek;
-    private List<Literature>  RelatedLiterature { get; set; } = new List<Literature>();
+    private string? InstructorName { get; set; } = instructorName;
+    private string? SyllabusLink { get; set; } = syllabusLink;
+    private List<Literature> RelatedLiterature { get; set; } = literature ?? new List<Literature>();
 
-    public List<Literature>  AddLiterature(Literature newLiterature)
-    {
-        this.RelatedLiterature.Add(newLiterature);
-
-        return this.RelatedLiterature;
-    }
-
-    public List<Literature> RemoveLiterature(string name)
-    {
-        this.RelatedLiterature.RemoveAll(l => l.Name == name);
-        return this.RelatedLiterature;
-    }
 
     public override string ToString()
     {
@@ -28,10 +26,23 @@ public class Subject(string name, string description, int classesPerWeek) : Base
     public void PrintDetails()
     {
         Console.WriteLine("-------------------------");
-        Console.WriteLine($"Subject: {this.Name}");
+        Console.WriteLine($"Details About: {this.Name}");
         Console.WriteLine("-------------------------");
+
+        if (!string.IsNullOrWhiteSpace(this.InstructorName))
+        {
+
+            Console.WriteLine($"Instructor Name: {this.InstructorName}");
+        }
+
+        if (!string.IsNullOrWhiteSpace(this.SyllabusLink))
+        {
+            Console.WriteLine($"Syllabus Link: {this.SyllabusLink}");
+        }
+
         Console.WriteLine($"Description: {this.Description}");
         Console.WriteLine($"Classes Per Week: {this.ClassesPerWeek}");
+
         Console.WriteLine("Related Literature:");
         foreach (Literature literature in this.RelatedLiterature)
         {
