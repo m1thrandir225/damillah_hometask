@@ -1,4 +1,5 @@
-﻿using damilah_hometask.presentation;
+﻿using damilah_hometask.data.services;
+using damilah_hometask.presentation;
 
 namespace damilah_hometask
 {
@@ -6,7 +7,9 @@ namespace damilah_hometask
     {
         static async Task Main(string[] args)
         {
-            var app = new App();
+            IConsoleService console = new RealConsoleService();
+
+            var app = new App(console);
 
             await app.Run();
         }

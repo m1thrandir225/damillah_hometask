@@ -1,4 +1,4 @@
-using damilah_hometask.data.impl;
+using damilah_hometask.data.providers.impl;
 using Xunit;
 using Assert = NUnit.Framework.Assert;
 

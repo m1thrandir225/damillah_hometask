@@ -1,6 +1,6 @@
 using damilah_hometask.domain;
 
-namespace damilah_hometask.data;
+namespace damilah_hometask.data.providers;
 
 public interface ISubjectProvider
 {
