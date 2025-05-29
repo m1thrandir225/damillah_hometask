@@ -6,21 +6,20 @@ public class Subject(
     int classesPerWeek,
     string? instructorName = null,
     string? syllabusLink = null,
-    List<Literature>? literature = null
-
+    List<Literature>? relatedLiterature = null
     ) : BaseEntity
 {
-    private string Name { get; set; } = name;
-    private string Description { get; set; } = description;
-    private int ClassesPerWeek { get; set; } = classesPerWeek;
-    private string? InstructorName { get; set; } = instructorName;
-    private string? SyllabusLink { get; set; } = syllabusLink;
-    private List<Literature> RelatedLiterature { get; set; } = literature ?? new List<Literature>();
+    public string Name { get; private set; } = name;
+    public string Description { get; private set; } = description;
+    public int ClassesPerWeek { get; private set; } = classesPerWeek;
+    public string? InstructorName { get; private set; } = instructorName;
+    public string? SyllabusLink { get; private set; } = syllabusLink;
+    public List<Literature> RelatedLiterature { get; private set; } = relatedLiterature ?? new List<Literature>();
 
 
     public override string ToString()
     {
-        return $"{this.Name} - {this.Description} - Classes Per Week: {this.ClassesPerWeek}";
+        return $"{this.Name}";
     }
 
     public void PrintDetails()
@@ -43,10 +42,18 @@ public class Subject(
         Console.WriteLine($"Description: {this.Description}");
         Console.WriteLine($"Classes Per Week: {this.ClassesPerWeek}");
 
-        Console.WriteLine("Related Literature:");
-        foreach (Literature literature in this.RelatedLiterature)
+        if (this.RelatedLiterature.Any())
         {
-            Console.WriteLine($"        * {literature.ToString()}");
+            Console.WriteLine("Related Literature:");
+            foreach (Literature literature in this.RelatedLiterature)
+            {
+                Console.WriteLine($"    * {literature.ToString()}");
+            }
         }
+        else
+        {
+            Console.WriteLine("No related literature.");
+        }
+
     }
 }

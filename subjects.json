@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "Parallel Programming",
+    "Description": "Research of the algorithms and programming techniques of the newest parallel platforms with shared and distributed memory. The student will learn the theoretical and practical (programmatical) components.",
+    "ClassesPerWeek": 2,
+    "RelatedLiterature": [
+      {
+        "Name": "Cuda by example",
+        "Url": "https://edoras.sdsu.edu/~mthomas/docs/cuda/cuda_by_example.book.pdf",
+        "Author": "Jason Sanders, Edward Kandrot",
+        "PublishDate": "2010-06-30T17:08:00.000Z"
+      },
+      {
+        "Name": "Cuda programming",
+        "Url": "https://www.amazon.com/CUDA-Programming-Developers-Applications-2012-11-27/dp/B017WQH8CM",
+        "Author": "Shane Cook",
+        "PublishDate": "2012-11-27T18:08:00.000Z"
+      }
+    ],
+    "InstructorName": "Marjan Gushev",
+    "SyllabusLink": "https://finki.ukim.mk/sites/default/files/parallel_programming.pdf"
+  },
+  {
+    "Name": "Linear algebra and applications",
+    "Description": "In this course you will learn the concepts and methods of linear algebra, and how to use them to think about problems arising in computer science.",
+    "ClassesPerWeek": 3,
+    "RelatedLiterature": [
+      {
+        "Name": "Linear Algebra and its Applications",
+        "Url": "https://www.amazon.com/Linear-Algebra-Its-Applications-5th/dp/032198238X",
+        "Author": "David C. Lay",
+        "PublishDate": "2014-12-24T18:08:00.000Z"
+      },
+      {
+        "Name": "Linear Algebra",
+        "Url": "https://www.amazon.com/Linear-Algebra-Jim-Hefferon/dp/1944325034",
+        "Author": "Jim Hefferon",
+        "PublishDate": "2017-01-01T18:08:00.000Z"
+      },
+      {
+        "Name": "Introductory Linear Algebra An Applied First Course 8/E",
+        "Author": "Bernard Kolman & David R. Hill",
+        "Url": "https://www.amazon.com/Introductory-Linear-Algebra-Applied-Course/dp/0131437402",
+        "PublishDate": "2004-01-04T18:08:00.000Z"
+      }
+    ],
+    "InstructorName": "Verica Bakeva",
+    "SyllabusLink": "https://finki.ukim.mk/sites/default/files/linear_algebra_and_applications.pdf"
+  }
+]

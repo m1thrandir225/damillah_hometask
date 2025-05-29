@@ -6,9 +6,10 @@ namespace damilah_hometask
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            new App().Run();
+            var app = new App();
+            await app.Run();
         }
     }
 }
