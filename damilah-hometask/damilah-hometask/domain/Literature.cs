@@ -1,6 +1,6 @@
 namespace damilah_hometask.domain;
 
-public class Literature(string name, string url, string author, DateTime publishDate) : BaseEntity
+public class Literature(string name, string url, string author, DateTime publishDate)
 {
     public string Name { get; set; } = name;
     public string Url { get; set; } = url;

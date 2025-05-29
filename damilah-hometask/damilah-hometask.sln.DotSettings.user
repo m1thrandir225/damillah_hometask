@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2b072236_002D7ac9_002D45c3_002D8310_002De71eab365824/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LiteratureTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.LiteratureTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.InMemorySubjectProviderTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.JsonSubjectProviderTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.SubjectTests.ToString_RetrunsCorrectFormat&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.SubjectTests.PrintDetails_OutputsCorrectInformation&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.SubjectTests.PrintDetails_WhenNoLiterature&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::2132FF53-FFBD-482B-9EC3-F8DD992F233F::net8.0::tests.SubjectTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

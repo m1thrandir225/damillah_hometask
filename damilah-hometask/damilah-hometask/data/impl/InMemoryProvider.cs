@@ -15,8 +15,8 @@ public class InMemoryProvider : ISubjectProvider
                 instructorName: "Giovanni Brown",
                 syllabusLink: "https://math22.com/syllabus",
                 relatedLiterature: new List<Literature>{
-                  new Literature("Multivariable Calculus 8th Edition", "https://www.amazon.com/Multivariable-Calculus-James-Stewart", "James Stewart", new DateTime(2015, 06, 15)),
-                  new Literature("Introduction to Linear Algebra 6th Edition", "https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang", "Gilbert Strang", new DateTime(2023, 04, 30)),
+                    new Literature("Multivariable Calculus 8th Edition", "https://www.amazon.com/Multivariable-Calculus-James-Stewart", "James Stewart", new DateTime(2015, 06, 15)),
+                    new Literature("Introduction to Linear Algebra 6th Edition", "https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang", "Gilbert Strang", new DateTime(2023, 04, 30)),
                 }
             ),
             new Subject(
@@ -33,7 +33,7 @@ public class InMemoryProvider : ISubjectProvider
                 instructorName: "Jason Furman",
                 syllabusLink: "https://economics.sas.upenn.edu/sites/default/files/penncourse/Saka%20F20%20Ec%2010%20syllabus.pdf",
                 relatedLiterature: new List<Literature>{
-                  new Literature("Principles of Economics 8th Edition", "https://www.amazon.com/Principles-Economics-N-Gregory-Mankiw/dp/1305585127", "N. Makiw", new DateTime(2017, 01, 1))
+                    new Literature("Principles of Economics 8th Edition", "https://www.amazon.com/Principles-Economics-N-Gregory-Mankiw/dp/1305585127", "N. Makiw", new DateTime(2017, 01, 1))
                 }
             )
         };

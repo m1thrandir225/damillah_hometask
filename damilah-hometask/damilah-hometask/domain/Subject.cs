@@ -1,13 +1,13 @@
 namespace damilah_hometask.domain;
 
-public class Subject(
+public class Subject (
     string name,
     string description,
     int classesPerWeek,
     string? instructorName = null,
     string? syllabusLink = null,
     List<Literature>? relatedLiterature = null
-    ) : BaseEntity
+)
 {
     public string Name { get; private set; } = name;
     public string Description { get; private set; } = description;
