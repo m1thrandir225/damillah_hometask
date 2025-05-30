@@ -1,12 +1,12 @@
 using damilah_hometask.domain;
-using Xunit;
 using Assert = NUnit.Framework.Assert;
+using NUnit.Framework;
 
 namespace tests;
 
 public class LiteratureTests
 {
-    [Fact]
+    [Test]
     public void ToString_ReturnsCorrectFormat()
     {
         var date = new DateTime();

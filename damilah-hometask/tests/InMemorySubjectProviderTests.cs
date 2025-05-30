@@ -1,12 +1,11 @@
 using damilah_hometask.data.providers.impl;
-using Xunit;
-using Assert = NUnit.Framework.Assert;
+using NUnit.Framework;
 
 namespace tests;
 
 public class InMemorySubjectProviderTests
 {
-    [Fact]
+    [Test]
     public async Task GetSubjectsAsync_ReturnsPredefinedSubjects()
     {
         var provider = new InMemoryProvider();

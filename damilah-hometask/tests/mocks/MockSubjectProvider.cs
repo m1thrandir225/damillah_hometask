@@ -9,6 +9,11 @@ public class MockSubjectProvider : ISubjectProvider
     public Exception? ExceptionToThrow { get; set; }
     public int GetSubjectsCallCount { get; set; } = 0;
 
+    public void ResetSubjectsCallCount()
+    {
+        GetSubjectsCallCount = 0;
+    }
+
     public Task<List<Subject>> GetSubjectsAsync()
     {
         GetSubjectsCallCount++;

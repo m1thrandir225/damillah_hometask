@@ -1,6 +1,5 @@
 using damilah_hometask.data.providers.impl;
-using Xunit;
-using Assert = NUnit.Framework.Assert;
+using NUnit.Framework;
 
 namespace tests;
 
@@ -32,7 +31,7 @@ public class JsonSubjectProviderTests
         File.WriteAllTextAsync(Path.Combine(TestFilesDir, "empty_subjects_data.json"), @"[]");
     }
 
-    [Fact]
+    [Test]
     public async Task GetSubjectsAsync_WithValidJsonFile_ReturnsSubjects()
     {
 
@@ -53,7 +52,7 @@ public class JsonSubjectProviderTests
         Assert.That(subject.RelatedLiterature.Count, Is.EqualTo(0));
     }
 
-    [Fact]
+    [Test]
     public async Task GetSubjectsAsync_WithEmptyJsonFile_ReturnsEmptySubjects()
     {
         var filePath = Path.Combine(TestFilesDir, "empty_subjects_data.json");
@@ -63,7 +62,7 @@ public class JsonSubjectProviderTests
         Assert.IsEmpty(subjects);
     }
 
-    [Fact]
+    [Test]
     public async Task GetSubjectsAsync_WithMalformedJsonFile_ReturnsEmptySubjects()
     {
         var filePath = Path.Combine(TestFilesDir, "malformed_subjects_data.json");
@@ -84,7 +83,7 @@ public class JsonSubjectProviderTests
         Console.SetOut(standardOutput);
     }
 
-    [Fact]
+    [Test]
     public async Task GetSubjectsAsync_WithNotExistingJsonFile_ReturnsEmptySubjects()
     {
         var filePath = Path.Combine(TestFilesDir, "non-existent-data.json");

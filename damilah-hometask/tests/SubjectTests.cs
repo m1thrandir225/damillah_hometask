@@ -1,12 +1,11 @@
 using damilah_hometask.domain;
-using Xunit;
-using Assert = NUnit.Framework.Assert;
+using NUnit.Framework;
 
 namespace tests;
 
 public class SubjectTests
 {
-    [Fact]
+    [Test]
     public void ToString_RetrunsCorrectFormat()
     {
         var subject = new Subject(
@@ -24,7 +23,7 @@ public class SubjectTests
         Assert.That(actual, Is.EqualTo(expected));
 
     }
-    [Fact]
+    [Test]
     public void PrintDetails_OutputsCorrectInformation()
     {
         var lit1 = new Literature("Literature 1",
@@ -65,7 +64,7 @@ public class SubjectTests
         Console.SetOut(standardOutput);
     }
 
-    [Fact]
+    [Test]
     public void PrintDetails_WhenNoLiterature()
     {
         var subject = new Subject(
@@ -94,7 +93,7 @@ public class SubjectTests
         Console.SetOut(standardOutput);
     }
 
-    [Fact]
+    [Test]
     public void PrintDetails_NoInstructor()
     {
         var subject = new Subject(
@@ -124,7 +123,7 @@ public class SubjectTests
     }
 
 
-    [Fact]
+    [Test]
     public void PrintDetails_NoSyllabus()
     {
         var subject = new Subject(
