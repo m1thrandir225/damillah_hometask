@@ -1,0 +1,23 @@
+name: Test App
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout Code
+      - name: Setup Dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore Dependencies
+        run: dotnet restore ./damilah-hometask/damilah-hometask.sln
+
+      - name: Build Solution
+        run: dotnet build ./damilah-hometask/damilah-hometask.sln --configuration Release --no-restore
+
+      - name: Test with CLI
+        run: dotnet test ./damilah-hometask/damilah-hometask.sln --configuration Release --no-build --verbosity normal
