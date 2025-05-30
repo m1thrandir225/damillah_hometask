@@ -3,7 +3,7 @@ using damilah_hometask.domain;
 
 namespace tests.mocks;
 
-public class MockServiceProvider : ISubjectProvider
+public class MockSubjectProvider : ISubjectProvider
 {
     public List<Subject> SubjectsToReturn { get; set; } = new List<Subject>();
     public Exception? ExceptionToThrow { get; set; }
